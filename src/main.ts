@@ -8,6 +8,7 @@ import { AppModule } from './app.module';
 //VISÃO PARA FRONT DATABASE: npx prisma studio
 //ADICIONAR MODULO GLOBAL: nest g module common
 //ADICIONAR SERVICE: nest g service common/prisma_service
+//GERAR PASTA DE AUTENTIFICAÇÃO: nest g guard auth/guards
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

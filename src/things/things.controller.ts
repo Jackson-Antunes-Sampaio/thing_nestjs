@@ -1,8 +1,9 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
+import { AuthGuard } from 'src/auth/guards/auth.guard';
 import { ThingsService } from './things.service';
 
-
+@UseGuards(AuthGuard)
 @Controller('things')
 export class ThingsController {
   constructor(private readonly thingsService: ThingsService) { }
