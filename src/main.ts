@@ -5,7 +5,9 @@ import { AppModule } from './app.module';
 //CRIAR CRUD: nest g resource things
 //GERAR node_modules : npx prisma generate
 //GERAR E ATUALIZAR BANCO DE DADOS: npx prisma db push
-// VISÃO PARA FRONT DATABASE: npx prisma studio
+//VISÃO PARA FRONT DATABASE: npx prisma studio
+//ADICIONAR MODULO GLOBAL: nest g module common
+//ADICIONAR SERVICE: nest g service common/prisma_service
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
